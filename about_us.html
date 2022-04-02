@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC School of Muntinlupa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- This is the link for swiper js -->
+    <!-- https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=karla">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    
+</head>
+<body>
+   
+   <Section class="header">
+<!--NAVIGATION-->
+       <nav>
+          <a href="index.html"><img src="images/WLogo.png"> </a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact_us.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars"onclick="showMenu()" ></i>
+       </nav>
+<div class="text-box">
+    <h1>About Us</h1>
+    <p>
+        Join a community of lifelong learners!
+    </p>
+    <a href=""class="hero-btn ">Visit Us To Know More</a>
+</div> 
+  </section>
+<!-- Course -->
+<section class="course">
+    <h1>Mission and Vision</h1>
+    
+
+    <div class = "row">
+        <div class="course-col">
+             <h3>Mission</h3>
+             <p>ABC School of Muntinlupa is committed to provide the best academic 
+                 environment for all students regardless of race and social standing 
+                 where their God-given abilities are nurtured and utilized for the 
+                 welfare of their fellowmen..</p>
+        </div>
+        <div class="course-col">
+            <h3>Vision</h3>
+            <p>ABC School of Muntinlupa envisions itself as one of the leading 
+                educational institutions in the country that is committed to 
+                produce God-fearing and well-rounded Filipino citizens and future leaders.</p>
+       </div> 
+       <div class="course-col">
+        <h3>Dedicated Educators</h3>
+        <p>We know that learning is easier when you have an excellent teacher. 
+            That's why most of our educators have achieved an advanced degree in their field. 
+            Our faculty are passionate about the subjects they teach and bring this 
+            enthusiasm into their lessons. </p>
+   </div>
+    </div>
+</section>
+<!------------Campus ----------->
+<section class="campus">
+    <h1>Our Campus</h1>
+    
+    
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/building/lb.png">
+            <div class="layer">
+                <h3>Building 1</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/building/s6.jpg">
+            <div class="layer">
+                <h3>Front Building</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/building/b2.jpg">
+            <div class="layer">
+                <h3>Building 2</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+
+<!-- Location Map -->
+<section class="mapCont">
+    <h1>The School Location Map</h1>
+    <h4>Block 1 Lot 6 Phase I, Sto. Niño Village,<br> Tunasan Muntinlupa City, Philippines <br>
+        805 - 50650</h4>
+ <br><br>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30920.162398704968!2d121.01513101964342!3d14.368237430349014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d12776e17b25%3A0x671a197d82d6ca6d!2sTunasan%2C%20Muntinlupa%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1648266099618!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+  <!-- Call to Action  -->
+<section class="cta">
+    <h1>Feel like we are the right school for you?</h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvmDsc_i082h4usEYr5cddRVCvLYKLdfWZfRvWLLsv3PGcw/viewform" class="hero-btn">APPLY NOW</a>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Block 1 Lot 6 Phase I, Sto. Niño Village,<br> Tunasan Muntinlupa City, Philippines <br>
+        805 - 50650</p>
+             <div class="icons">  
+                 <i class="fa fa-facebook"></i>
+                 <i class="fa fa-twitter"></i>
+                 <i class="fa fa-instagram"></i>
+                 <i class="fa fa-linkedin"></i>
+             </div>
+             <p>Made with <i class="fa fa-heart-o"></i> by Musni,Apolonio,Tayoto Groups </p>
+             <p>Copyright &copy; 2022</p>
+    </section>
+
+
+
+<!--- Javascript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC School of Muntinlupa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleA.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- This is the link for swiper js -->
+    <!-- https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=karla">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    
+</head>
+<body>
+   
+   <Section class="header">
+<!--NAVIGATION-->
+       <nav>
+          <a href="index.html"><img src="images/WLogo.png"> </a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times"onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_us.html">ABOUT</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="contact_us.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa fa-bars"onclick="showMenu()" ></i>
+       </nav>
+<div class="text-box">
+    <h1>Contact Us</h1>
+    <p>
+        Join a community of lifelong learners!
+    </p>
+    <a href=""class="hero-btn ">Visit Us To Know More</a>
+</div> 
+  </section>
+<!-- Contact US -->
+<section class="contact">
+    <!-- <form onsubmit="sendEmail(); reset(); return false; "> -->
+        <form action="https://formsubmit.co/afmusni@gmail.com" method="POST">
+        <h3>GET IN TOUCH</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email id" required>
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message " rows="4 "placeholder="How can we help you?"></textarea>
+        
+        <!-- to hide Captcha -->
+        <!-- <input type="hidden" name="_captcha" value="false"> -->
+        
+        <!-- need the domain name in order to process this -->
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        
+        <button type="submit">Send </button>
+    </form>
+</section>
+ 
+<!-- Location Map -->
+<section class="mapCont">
+    <h1>The School Location Map</h1>
+    <h4>Tunasan Muntinlupa City</h4>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30920.162398704968!2d121.01513101964342!3d14.368237430349014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d12776e17b25%3A0x671a197d82d6ca6d!2sTunasan%2C%20Muntinlupa%2C%20Kalakhang%20Maynila!5e0!3m2!1sfil!2sph!4v1648266099618!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+  <!-- Call to Action  -->
+<section class="cta">
+    <h1>Feel like we are the right school for you?</h1>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGvmDsc_i082h4usEYr5cddRVCvLYKLdfWZfRvWLLsv3PGcw/viewform" class="hero-btn">APPLY NOW</a>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+<h4>About Us</h4>
+<p>Lorem Ipsum is simply dummy text of the printing 
+    and typesetting industry. Lorem Ipsum has been 
+    the industry's standard dummy text <br>ever since the 
+    1500s, when an unknown printer took a galley of 
+    type and scrambled it to make a type specimen book.</p>
+         <div class="icons">  
+             <i class="fa fa-facebook"></i>
+             <i class="fa fa-twitter"></i>
+             <i class="fa fa-instagram"></i>
+             <i class="fa fa-linkedin"></i>
+         </div>
+         <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials </p>
+</section>
+
+<footer>
+    <p>Copyright &copy; 2019, Code Addict</p>
+</footer> 
+
+<!--- Javascript for Toggle Menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+<!-- for Sending Email -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "afmusni@gmail.com",
+    Password : "043536@Ab",
+    To : 'afmusni@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
