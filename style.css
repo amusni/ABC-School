@@ -6,7 +6,7 @@
     min-height: 100vh;
     width: 100%;
    background-image: linear-gradient(rgba(4,9,30,0.7),
-    rgba(4,9,30,0.7)),url(images/building/front1.PNG);  
+    rgba(4,9,30,0.7)),url(images/front1.PNG);  
     background-position: center;
     background-size: cover;
     position: relative;
@@ -279,7 +279,7 @@ h3{
     width: 80%;
     height: 100% ;
     background-image: linear-gradient(rgba(0,0,0,.2),
-    rgba(0,0,0,0.7)),url(images/Building/s6.jpg);
+    rgba(0,0,0,0.7)),url(images/s6.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
