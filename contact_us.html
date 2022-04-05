@@ -24,10 +24,10 @@
             <i class="fa fa-times"onclick="hideMenu()"></i>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about_us.html">ABOUT</a></li>
+                <li><a href="about_us.html">ABOUT US</a></li>
                 <li><a href="faq.html">FAQs</a></li>
                 <li><a href="events.html">EVENTS</a></li>
-                <li><a href="contact_us.html">CONTACT</a></li>
+                <li><a href="contact_us.html">CONTACT US</a></li>
             </ul>
           </div>
           <i class="fa fa-bars"onclick="showMenu()" ></i>
@@ -47,19 +47,18 @@
         <h3>GET IN TOUCH</h3>
         <input type="text" id="name" placeholder="Your Name" required>
         <input type="email" id="email" placeholder="Email id" required>
-        <input type="hidden" name="_subject" value="New email">
+        <input type="hidden" name="_subject" value="New submission!">
         <input type="text" id="phone" placeholder="Phone no." required>
-       <input type="text" name="message" placeholder="Write your message here" required>
-       
-        <!-- <textarea id="message " rows="4 "placeholder="How can we help you?"></textarea> -->
+        <textarea id="message " rows="4 "placeholder="How can we help you?"></textarea>
         
         <!-- to hide Captcha -->
         <!-- <input type="hidden" name="_captcha" value="false"> -->
         
         <!-- need the domain name in order to process this -->
-        <input type="hidden" name="_next" value="https://amusni.github.io/ABCSchool.com/thankyou.html">
+        <input type="hidden" name="_next" value="https://amusni.github.io/thankyou.html">
         
         <button type="submit">Send </button>
+      
     </form>
 </section>
  
@@ -86,17 +85,16 @@
     1500s, when an unknown printer took a galley of 
     type and scrambled it to make a type specimen book.</p>
          <div class="icons">  
-             <i class="fa fa-facebook"></i>
+            <a href="https://www.facebook.com/abcshoolofmuntinlupapage"><i class="fa fa-facebook"></i></a>
              <i class="fa fa-twitter"></i>
              <i class="fa fa-instagram"></i>
              <i class="fa fa-linkedin"></i>
          </div>
-         <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials </p>
+         <p>Made with <i class="fa fa-heart-o"></i> by Musni,Apolonio,Tayoto Groups </p>
+             <p>Copyright &copy; 2022</p>
 </section>
 
-<footer>
-    <p>Copyright &copy; 2019, Code Addict</p>
-</footer> 
+
 
 <!--- Javascript for Toggle Menu--->
 <script>
@@ -146,6 +144,15 @@ prevEl: '.swiper-button-prev',
 }).then(
   message => alert(message)
 );
+    }
+</script>
+<script>
+    let popup = document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
     }
 </script>
 </body>
