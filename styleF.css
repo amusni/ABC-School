@@ -383,6 +383,11 @@ section{
     padding:8px 20px;
     border-radius: 30px; 
 }
+.contact .newslatter .cta:hover{
+    background: gold;
+    border: 2px solid var(--main-color);
+    color: red;
+}
 .copyright{
     background: var(--bg-color);
     padding: 20px 30px;
