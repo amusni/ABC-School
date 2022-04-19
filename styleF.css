@@ -252,7 +252,7 @@ section{
 }
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
