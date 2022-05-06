@@ -9,7 +9,7 @@
 body{
   /* background: #001660; */
   background-image: linear-gradient(rgba(4,9,30,0.7),
-  rgba(4,9,30,0.7)),url(images/front1.PNG);  
+  rgba(4,9,30,0.7)),url(images/abcsocialmedia.png);  
   min-height: 100vh;
   width: 100%;
   background-position: center;
@@ -32,6 +32,9 @@ body{
   font-size: 52px;
   margin-bottom: 60px;
   text-align: center;
+}
+h1{
+  color: #81c644;;
 }
 
 .team{
